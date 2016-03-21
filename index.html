@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objectifying Myself</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			var me = {
+				"first": "Gavin",
+				"last": "Kaplan",
+				"hair": "bad",
+				"breath": "smelly when I wake up"
+				"weakness": ["fire", "bullets", "cilantro"],
+				"animal": "potato"
+			}
+
+			$(document).ready(function(){
+		        $("p").click(function(){
+		        	var key = $(this).attr('class');
+		        	console.log(key);
+		        	var val = "poop";
+		        	console.log(val);
+		        	$(this).text(val);
+		        });
+      		});
+		</script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>First Name: 
+				<p class="first">XXX</p>
+			</li>
+			<li>Last Name: 
+				<p class="last">XXX</p>
+			</li>
+			<li>How's My Hair: 
+				<p class="hair">XXX</p>
+			</li>
+			<li>How's My Breath: 
+				<p class="breath">XXX</p>
+			</li>
+			<li>Weaknesses: 
+				<p class="weakness">XXX</p>
+			</li>
+			<li>Spirit Animal: 
+				<p class="animal">XXX</p>
+			</li>
+		</ul>
+	</body>
+</html>
