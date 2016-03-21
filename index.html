@@ -7,44 +7,52 @@
 			var me = {
 				"first": "Gavin",
 				"last": "Kaplan",
-				"hair": "bad",
-				"breath": "smelly when I wake up"
-				"weakness": ["fire", "bullets", "cilantro"],
-				"animal": "potato"
+				"hair": "Bad",
+				"breath": "Smelly when I wake up",
+				"weakness": ["Fire", "Bullets", "Cilantro"],
+				"animal": "The Majestic Sweet Potato"
 			}
 
 			$(document).ready(function(){
 		        $("p").click(function(){
 		        	var key = $(this).attr('class');
 		        	console.log(key);
-		        	var val = "poop";
+		        	var val = me[key];
 		        	console.log(val);
 		        	$(this).text(val);
 		        });
       		});
 		</script>
 		<style>
+		p {
+			margin-left: 13%;
+		}
+
+		li {
+			font-size: 20px;
+		}
 		</style>
 	</head>
 	<body>
+		<h1>Click the X's for answer</h1>
 		<ul>
 			<li>First Name: 
-				<p class="first">XXX</p>
+				<p class="first">XXXXXXXXXXXX</p>
 			</li>
 			<li>Last Name: 
-				<p class="last">XXX</p>
+				<p class="last">XXXXXXXXXXXX</p>
 			</li>
 			<li>How's My Hair: 
-				<p class="hair">XXX</p>
+				<p class="hair">XXXXXXXXXXXX</p>
 			</li>
 			<li>How's My Breath: 
-				<p class="breath">XXX</p>
+				<p class="breath">XXXXXXXXXXXX</p>
 			</li>
 			<li>Weaknesses: 
-				<p class="weakness">XXX</p>
+				<p class="weakness">XXXXXXXXXXXX</p>
 			</li>
 			<li>Spirit Animal: 
-				<p class="animal">XXX</p>
+				<p class="animal">XXXXXXXXXXXX</p>
 			</li>
 		</ul>
 	</body>
